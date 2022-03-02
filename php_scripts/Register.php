@@ -6,20 +6,24 @@
 <body>    
     <h2>Register Page</h2><br>    
     <body>       
-        <div class="register">    
-        <form id="login" method="get" action="login.php">        
-            <input type="text" name="Uname" id="Uname" placeholder="Username">    
-            <br><br>       
-            </label>    
-            <input type="Password" name="Pass" id="Pass" placeholder="Password">    
-            <br><br>   
-            <input type="Password" name="Pass" id="Pass" placeholder="Password">    
-            <br><br>   
-            <input type="button" name="reg" id="reg" value="Register">       
-            <br><br>    
-            Allready user?  <a  href="login.html">Login </a>     
-            <br><br>      
-        </form> 
-</div>    
+   
+            <a href="../idex1.php">Home</a>   
+       
+
+        <form action="../php_scripts/RegisterScript.php" method="POST">
+        <label for = "username">Meno:</label>
+        <input type = "text" name="username" id = "username">
+        <br>
+        <label for = "email">Email:</label>
+        <input type = "mail" name="email" id = "email">
+        <br>
+        <label for = "password">Heslo:</label>
+        <input type = "password" name="password" id = "password">
+        <br>
+        <label for = "password_check">Zopakuj heslo:</label>
+        <input type = "password" name="password_check" id = "password_check">
+        <br>
+        <input type="submit" value = "Registruj">
+        </form>   
 </body>    
 </html> 

@@ -13,7 +13,7 @@ if (!$conn) {
 }
 //echo "Connected successfully </br>";
 
-$sql = "SELECT id, username, password FROM Users";
+/*$sql = "SELECT id, username, password FROM Users";
 $result = mysqli_query($conn, $sql);
 print_r(mysqli_num_rows($result));
 
@@ -25,7 +25,7 @@ while($row = mysqli_fetch_assoc($result)){
 }else{
 echo "0  results";
 }
-
+*/
 
 
 ?>
