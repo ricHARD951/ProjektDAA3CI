@@ -2,7 +2,8 @@
 <html>    
 <head>    
     <title>Register</title>    
-</head>    
+</head>  
+<link rel= "stylesheet" href="../style/style_register.css">  
 <body>    
     <h2>Register Page</h2><br>    
     <body>       
