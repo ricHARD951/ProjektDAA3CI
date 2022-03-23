@@ -1,9 +1,13 @@
 body{
- background-color: #30302e;  
- margin: 0 auto 0 auto;  
- width:100%; 
- text-align:center;
- margin: 20px 0px 20px 0px; 
+  background-image: url("bubu.gif");
+  height: 900px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto 0 auto;  
+  width:100%; 
+  text-align:center;
+  margin: 20px 0px 20px 0px;
   }
   
   a{
