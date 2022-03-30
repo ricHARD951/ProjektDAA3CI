@@ -1,3 +1,4 @@
+<?php include('parts/header.php')?>
 <!DOCTYPE html>    
 <html>    
 <head>    
@@ -5,13 +6,13 @@
 <link rel= "stylesheet" href="../style/style_register.css">  
 </head>    
 <body>    
-<h2>Login Page</h2><br>          
+          
   
         <a href="../idex1.php">Home</a><br>  
         
         
         <form action="../php_scripts/LoginScript.php" method="POST">   
-        <label for = "username">Meno</label>
+        <label class="custom" for = "username">Meno</label>
         <input type = "text" name="username" id = "username">
         <br>
 

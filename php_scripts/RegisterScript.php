@@ -50,7 +50,7 @@ else{
     $password_match = false;
 }
 
-$hashed_password = password_hash($_POST["password"], PASSWORD_BCRYPT);
+$hashed_password = MD5($_POST["password"]);
 echo "Unhashed password: " . $_POST["password"] . "<br>";
 echo "Hashed password: " . $hashed_password;
 

@@ -4,8 +4,7 @@
     <title>Register</title>    
 </head>  
 <link rel= "stylesheet" href="../style/style_register.css">  
-<body>    
-    <h2>Register Page</h2><br>    
+<body>       
     <body>       
    
             <a href="../idex1.php">Home</a>   
