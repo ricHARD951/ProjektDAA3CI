@@ -1,6 +1,9 @@
 <?php
 require 'php_scripts/Connection.php';
 ?>
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,18 +22,26 @@ require 'php_scripts/Connection.php';
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Nevime</a>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a href="idex1.php" class="btn btn-secondary">Home</a>
                         </li>
                     </ul>
+                    <?php if (!isset($_SESSION["username"])) : ?>
                     <div>
-                        <a href="php_scripts/Login.php" class="btn btn-success">Prihlasenie</a>
+                        <a href="Login.php" class="btn btn-success">Prihlasenie</a>
                         <a href="php_scripts/Register.php" class="btn btn-danger">Register</a>
                     </div>
+                    <?php else : ?>
+                        <div class="d-flex aling-items-center">
+                            <p class = "text-info mb-0">
+                                Práve je prihlásený uživatel <?php echo $_SESSION["username"] ?>
+                            </p>
+                            <a href="./php_scripts/Logout.php" class= "btn btn-success">Logout</a>
+                    <?php endif; ?>        
                 </div>
+                
             </div>
         </nav>
     </header>
