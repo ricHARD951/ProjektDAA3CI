@@ -56,7 +56,7 @@ echo "Hashed password: " . $hashed_password;
 
 require_once ("./Connection.php" );
 if($password_match && $validated){
-    $sql = 'INSERT INTO users(password,email,username) VALUES("'. $_POST["password"] .'","'.$_POST["email"] .'","'.$_POST["username"].'");';
+    $sql = 'INSERT INTO users(password,email,username) VALUES("'. $hashed_password .'","'.$_POST["email"] .'","'.$_POST["username"].'");';
 
     if($conn->query($sql) === TRUE){
         echo "Záznam vytvorený";

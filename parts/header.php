@@ -26,6 +26,7 @@ session_start();
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                         <a href="idex1.php" class="btn btn-secondary">Home</a>
+                        <a href="Userslist.php" class="btn btn-secondary">Users</a>
                         </li>
                     </ul>
                     <?php if (!isset($_SESSION["username"])) : ?>
